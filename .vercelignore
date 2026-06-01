@@ -1,0 +1,33 @@
+# Ignore all files by default
+*
+!.git
+!.gitignore
+!package.json
+!package-lock.json
+!yarn.lock
+!pnpm-lock.yaml
+!tsconfig.json
+!next.config.js
+!next.config.mjs
+!.npmrc
+!.env
+!.env.local
+!.env.*.local
+
+# Keep the apps directory and its subdirectories
+!apps
+!apps/customer/**
+!apps/technician/**
+!apps/admin/**
+
+# Keep the packages directory
+!packages
+!packages/**
+
+# Additional root files
+!vercel.json
+!.eslintrc
+!.eslintrc.json
+!.eslintrc.js
+!postcss.config.js
+!tailwind.config.js
