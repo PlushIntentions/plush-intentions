@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "build": [
+    {
+      "src": "apps/customer/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "apps/technician/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "apps/admin/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(?!.*\\.)",
+      "status": 404
+    }
+  ]
+}
