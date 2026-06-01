@@ -1,0 +1,19 @@
+{
+  "name": "plush-intentions",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:customer":    "cd apps/customer && npm run dev",
+    "dev:technician":  "cd apps/technician && npm run dev",
+    "dev:admin":       "cd apps/admin && npm run dev",
+    "dev:all":         "concurrently \"npm run dev:customer\" \"npm run dev:technician\" \"npm run dev:admin\"",
+    "build:all":       "npm run build --workspace=apps/customer && npm run build --workspace=apps/technician && npm run build --workspace=apps/admin"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
