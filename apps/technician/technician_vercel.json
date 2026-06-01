@@ -1,8 +1,1 @@
-{
-  "framework": "nextjs",
-  "name": "plush-intentions-technician",
-  "buildCommand": "next build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "regions": ["iad1"]
-}
+PLACEHOLDER
